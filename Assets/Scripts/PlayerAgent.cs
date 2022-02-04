@@ -32,10 +32,6 @@ public class PlayerAgent : Agent
         }
     }
 
-    void Update() {}
-
-    public override void OnEpisodeBegin() {}
-
     public override void CollectObservations(VectorSensor sensor)
     {
         // For the ball
@@ -78,9 +74,14 @@ public class PlayerAgent : Agent
         EndEpisode();
     }
 
-    public void TouchedBall()
+    public void WinMatch()
     {
-        SetReward(1);
+        SetReward(10);
+    }
+
+    public void Goal()
+    {
+        SetReward(6);
     }
 
     public void BlockedEnemyShot()
@@ -88,13 +89,23 @@ public class PlayerAgent : Agent
         SetReward(2);
     }
 
-    public void Goal()
+    public void TouchedBall()
     {
-        SetReward(5);
+        SetReward(1);
+    }
+
+    public void LooseMatch()
+    {
+        SetReward(-10);
     }
 
     public void OwnGoal()
     {
-        SetReward(-5);
+        SetReward(-6);
+    }
+
+    public void RestartedBall()
+    {
+        SetReward(-1);
     }
 }

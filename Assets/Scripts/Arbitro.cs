@@ -10,22 +10,52 @@ public class Arbitro : MonoBehaviour
 
     string lastTouched;
 
+    int maxGoalCount;
+
     float lastTouchedTime;
     float timeToRestart;
+
+    int blueGoalCount;
+    int redGoalCount;
 
     void Start()
     {
         lastTouched = "";
 
+        maxGoalCount = 3;
+
         lastTouchedTime = Time.time;
         timeToRestart = 15;
+
+        blueGoalCount = 0;
+        redGoalCount = 0;
     }
 
     void Update()
     {
         if (Time.time - lastTouchedTime > timeToRestart)
         {
+            playerAgentBlue.RestartedBall();
+            playerAgentRed.RestartedBall();
+
+            RestartBall();
+        }
+
+        if (blueGoalCount >= maxGoalCount)
+        {
+            playerAgentBlue.WinMatch();
+            playerAgentRed.LooseMatch();
+
             RestartMatch();
+            Debug.Log("Blue wins!!!");
+        }
+        else if (redGoalCount >= maxGoalCount)
+        {
+            playerAgentBlue.LooseMatch();
+            playerAgentRed.WinMatch();
+
+            RestartMatch();
+            Debug.Log("Red wins!!!");
         }
     }
 
@@ -43,6 +73,8 @@ public class Arbitro : MonoBehaviour
                 Debug.Log("Blue goal");
                 playerAgentBlue.Goal();
             }
+
+            blueGoalCount++;
         }
         else if (teamGoal == "BlueGoal")
         {
@@ -56,12 +88,16 @@ public class Arbitro : MonoBehaviour
                 Debug.Log("Red goal");
                 playerAgentRed.Goal();
             }
+
+            redGoalCount++;
         }
 
-        RestartMatch();
+        RestartBall();
+
+        Debug.Log("Blue: " + blueGoalCount + " - Red: " + redGoalCount);
     }
 
-    void RestartMatch()
+    void RestartBall()
     {
         ball.RestartPosition();
         ball.ApplyRandomForce();
@@ -69,6 +105,14 @@ public class Arbitro : MonoBehaviour
         lastTouched = "";
 
         lastTouchedTime = Time.time;
+    }
+
+    void RestartMatch()
+    {
+        RestartBall();
+
+        blueGoalCount = 0;
+        redGoalCount = 0;
 
         playerAgentBlue.EndMatch();
         playerAgentRed.EndMatch();

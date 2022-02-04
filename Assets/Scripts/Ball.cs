@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    Arbitro arbitro;
+    public Arbitro arbitro;
     PlayerAgent playerAgentBlue;
     PlayerAgent playerAgentRed;
 
@@ -15,13 +15,14 @@ public class Ball : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
 
         ApplyRandomForce();
-
-        arbitro = GameObject.Find("Arbitro").GetComponent<Arbitro>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Ball touch: " + other.gameObject.tag);
+        if (other.gameObject.tag != "Untagged")
+        {
+            Debug.Log("Ball touch: " + other.gameObject.tag);
+        }
 
         if (other.gameObject.tag == "PlayerRed")
         {
@@ -37,7 +38,7 @@ public class Ball : MonoBehaviour
     {
         rigidBody.angularVelocity = Vector3.zero;
         rigidBody.velocity = Vector3.zero;
-        rigidBody.transform.localPosition = new Vector3(0, 5, 0);
+        rigidBody.transform.localPosition = new Vector3(0, 5, 3);
     }
 
     public void ApplyRandomForce()

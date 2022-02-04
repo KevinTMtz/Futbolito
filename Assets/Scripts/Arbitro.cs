@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Arbitro : MonoBehaviour
 {
-    Ball ball;
-    PlayerAgent playerAgentBlue;
-    PlayerAgent playerAgentRed;
+    public Ball ball;
+    public PlayerAgent playerAgentBlue;
+    public PlayerAgent playerAgentRed;
 
     string lastTouched;
 
@@ -15,24 +15,16 @@ public class Arbitro : MonoBehaviour
 
     void Start()
     {
-        playerAgentBlue = GameObject.Find("Agent Blue").GetComponent<PlayerAgent>();
-        playerAgentRed = GameObject.Find("Agent Red").GetComponent<PlayerAgent>();
-
-        ball = GameObject.Find("Pelota").GetComponent<Ball>();
-
         lastTouched = "";
 
         lastTouchedTime = Time.time;
-        timeToRestart = 10;
+        timeToRestart = 15;
     }
 
     void Update()
     {
         if (Time.time - lastTouchedTime > timeToRestart)
         {
-            ball.RestartPosition();
-            ball.ApplyRandomForce();
-
             RestartMatch();
         }
     }

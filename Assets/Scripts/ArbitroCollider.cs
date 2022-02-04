@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class ArbitroCollider : MonoBehaviour
 {
-    Arbitro arbitro;
-
-    void Start()
-    {
-        arbitro = GetComponentInParent<Arbitro>();
-    }
+    public Arbitro arbitro;
 
     void OnTriggerEnter(Collider other)
     {

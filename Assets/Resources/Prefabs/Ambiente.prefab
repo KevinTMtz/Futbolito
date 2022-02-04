@@ -55,7 +55,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 1d6c2ca5bb4a04ebaaa21456d5c9d775, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 9ee3cd907477749b1b6b4e48da8a7068, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Futbolito
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07440181332e4205a1e7bffc0ce725a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arbitro: {fileID: 5676570520240792679}
 --- !u!1 &1362633553
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07440181332e4205a1e7bffc0ce725a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arbitro: {fileID: 5676570520240792679}
 --- !u!1 &1461391227
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +276,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 1d6c2ca5bb4a04ebaaa21456d5c9d775, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 9ee3cd907477749b1b6b4e48da8a7068, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: Futbolito
@@ -2950,6 +2952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8db21b564f864de5bdbed67f31b87e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arbitro: {fileID: 5676570520240792679}
 --- !u!1 &5676570518897115154
 GameObject:
   m_ObjectHideFlags: 0
@@ -10265,6 +10268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec1146659c42864f93f44397d2f44e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 1063032704}
+  playerAgentBlue: {fileID: 1461391229}
+  playerAgentRed: {fileID: 565970904}
 --- !u!1 &5676570520251254114
 GameObject:
   m_ObjectHideFlags: 0

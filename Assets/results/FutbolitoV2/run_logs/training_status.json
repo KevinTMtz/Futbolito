@@ -1,0 +1,65 @@
+{
+    "Futbolito": {
+        "checkpoints": [
+            {
+                "steps": 3499956,
+                "file_path": "results/FutbolitoV2/Futbolito/Futbolito-3499956.onnx",
+                "reward": 1.0454545454545454,
+                "creation_time": 1644006743.241024,
+                "auxillary_file_paths": [
+                    "results/FutbolitoV2/Futbolito/Futbolito-3499956.pt"
+                ]
+            },
+            {
+                "steps": 3999904,
+                "file_path": "results/FutbolitoV2/Futbolito/Futbolito-3999904.onnx",
+                "reward": 1.875,
+                "creation_time": 1644007251.022227,
+                "auxillary_file_paths": [
+                    "results/FutbolitoV2/Futbolito/Futbolito-3999904.pt"
+                ]
+            },
+            {
+                "steps": 4499808,
+                "file_path": "results/FutbolitoV2/Futbolito/Futbolito-4499808.onnx",
+                "reward": 1.7457627118644068,
+                "creation_time": 1644007754.615735,
+                "auxillary_file_paths": [
+                    "results/FutbolitoV2/Futbolito/Futbolito-4499808.pt"
+                ]
+            },
+            {
+                "steps": 4999998,
+                "file_path": "results/FutbolitoV2/Futbolito/Futbolito-4999998.onnx",
+                "reward": 1.3333333333333333,
+                "creation_time": 1644008262.66522,
+                "auxillary_file_paths": [
+                    "results/FutbolitoV2/Futbolito/Futbolito-4999998.pt"
+                ]
+            },
+            {
+                "steps": 5000528,
+                "file_path": "results/FutbolitoV2/Futbolito/Futbolito-5000528.onnx",
+                "reward": 1.42,
+                "creation_time": 1644008262.730538,
+                "auxillary_file_paths": [
+                    "results/FutbolitoV2/Futbolito/Futbolito-5000528.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000528,
+            "file_path": "results/FutbolitoV2/Futbolito.onnx",
+            "reward": 1.42,
+            "creation_time": 1644008262.730538,
+            "auxillary_file_paths": [
+                "results/FutbolitoV2/Futbolito/Futbolito-5000528.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1"
+    }
+}

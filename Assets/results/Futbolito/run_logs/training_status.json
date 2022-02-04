@@ -1,0 +1,38 @@
+{
+    "Futbolito": {
+        "checkpoints": [
+            {
+                "steps": 499854,
+                "file_path": "results/Futbolito/Futbolito/Futbolito-499854.onnx",
+                "reward": 0.5,
+                "creation_time": 1643946377.714966,
+                "auxillary_file_paths": [
+                    "results/Futbolito/Futbolito/Futbolito-499854.pt"
+                ]
+            },
+            {
+                "steps": 500248,
+                "file_path": "results/Futbolito/Futbolito/Futbolito-500248.onnx",
+                "reward": 0.75,
+                "creation_time": 1643946377.774495,
+                "auxillary_file_paths": [
+                    "results/Futbolito/Futbolito/Futbolito-500248.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500248,
+            "file_path": "results/Futbolito/Futbolito.onnx",
+            "reward": 0.75,
+            "creation_time": 1643946377.774495,
+            "auxillary_file_paths": [
+                "results/Futbolito/Futbolito/Futbolito-500248.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1"
+    }
+}

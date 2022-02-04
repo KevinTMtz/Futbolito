@@ -93,20 +93,8 @@ public class PlayerAgent : Agent
         SetReward(5);
     }
 
-    // TODO: Implement & Check if it gives better results
-    public void BlockedTeamShot()
-    {
-        SetReward(-1);
-    }
-
     public void OwnGoal()
     {
         SetReward(-5);
-    }
-
-    // TODO: Implement
-    public void TakeBallOutCourt()
-    {
-        SetReward(-2);
     }
 }

@@ -78,6 +78,11 @@ public class Arbitro : MonoBehaviour
     {
         if (whoTouched == "PlayerRed")
         {
+            if (lastTouched == "PlayerBlue")
+            {
+                playerAgentRed.BlockedEnemyShot();
+            }
+
             lastTouched = "PlayerRed";
             playerAgentRed.TouchedBall();
 
@@ -85,6 +90,11 @@ public class Arbitro : MonoBehaviour
         }
         else if (whoTouched == "PlayerBlue")
         {
+            if (lastTouched == "PlayerRed")
+            {
+                playerAgentBlue.BlockedEnemyShot();
+            }
+
             lastTouched = "PlayerBlue";
             playerAgentBlue.TouchedBall();
 

@@ -145,4 +145,10 @@ public class Arbitro : MonoBehaviour
             lastTouchedTime = Time.time;
         }
     }
+
+    public void NotTouching()
+    {
+        playerAgentRed.NotTouching();
+        playerAgentBlue.NotTouching();
+    }
 }

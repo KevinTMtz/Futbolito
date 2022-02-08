@@ -1,0 +1,66 @@
+{
+    "Futbolito": {
+        "checkpoints": [
+            {
+                "steps": 499592,
+                "file_path": "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-499592.onnx",
+                "reward": 141.5719955444336,
+                "creation_time": 1644129731.737362,
+                "auxillary_file_paths": [
+                    "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-499592.pt"
+                ]
+            },
+            {
+                "steps": 999977,
+                "file_path": "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-999977.onnx",
+                "reward": 204.75665918986002,
+                "creation_time": 1644130366.924793,
+                "auxillary_file_paths": [
+                    "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-999977.pt"
+                ]
+            },
+            {
+                "steps": 1499038,
+                "file_path": "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-1499038.onnx",
+                "reward": 211.24226622147992,
+                "creation_time": 1644130994.182922,
+                "auxillary_file_paths": [
+                    "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-1499038.pt"
+                ]
+            },
+            {
+                "steps": 1999576,
+                "file_path": "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-1999576.onnx",
+                "reward": 216.31707453727722,
+                "creation_time": 1644131644.783134,
+                "auxillary_file_paths": [
+                    "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-1999576.pt"
+                ]
+            },
+            {
+                "steps": 2212043,
+                "file_path": "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-2212043.onnx",
+                "reward": 132.08651372660762,
+                "creation_time": 1644131928.932021,
+                "auxillary_file_paths": [
+                    "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-2212043.pt"
+                ]
+            }
+        ],
+        "elo": 1180.0101000591887,
+        "final_checkpoint": {
+            "steps": 2212043,
+            "file_path": "results/Futbolito_V1.4_noTouch/Futbolito.onnx",
+            "reward": 132.08651372660762,
+            "creation_time": 1644131928.932021,
+            "auxillary_file_paths": [
+                "results/Futbolito_V1.4_noTouch/Futbolito/Futbolito-2212043.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.8.1"
+    }
+}

@@ -17,6 +17,10 @@ public class Ball : MonoBehaviour
         ApplyRandomForce();
     }
 
+    void FixedUpdate() {
+        arbitro.NotTouching();
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag != "Untagged")

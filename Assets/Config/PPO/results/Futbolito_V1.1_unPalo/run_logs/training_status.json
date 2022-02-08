@@ -1,0 +1,65 @@
+{
+    "Futbolito": {
+        "checkpoints": [
+            {
+                "steps": 2499300,
+                "file_path": "results/Futbolito_unPalo/Futbolito/Futbolito-2499300.onnx",
+                "reward": 6.6,
+                "creation_time": 1644105445.8256052,
+                "auxillary_file_paths": [
+                    "results/Futbolito_unPalo/Futbolito/Futbolito-2499300.pt"
+                ]
+            },
+            {
+                "steps": 2588452,
+                "file_path": "results/Futbolito_unPalo/Futbolito/Futbolito-2588452.onnx",
+                "reward": 7.8,
+                "creation_time": 1644105538.675925,
+                "auxillary_file_paths": [
+                    "results/Futbolito_unPalo/Futbolito/Futbolito-2588452.pt"
+                ]
+            },
+            {
+                "steps": 2999538,
+                "file_path": "results/Futbolito_unPalo/Futbolito/Futbolito-2999538.onnx",
+                "reward": 6.333333333333333,
+                "creation_time": 1644107075.2384,
+                "auxillary_file_paths": [
+                    "results/Futbolito_unPalo/Futbolito/Futbolito-2999538.pt"
+                ]
+            },
+            {
+                "steps": 3499817,
+                "file_path": "results/Futbolito_unPalo/Futbolito/Futbolito-3499817.onnx",
+                "reward": 8.6,
+                "creation_time": 1644107539.201374,
+                "auxillary_file_paths": [
+                    "results/Futbolito_unPalo/Futbolito/Futbolito-3499817.pt"
+                ]
+            },
+            {
+                "steps": 3570992,
+                "file_path": "results/Futbolito_unPalo/Futbolito/Futbolito-3570992.onnx",
+                "reward": null,
+                "creation_time": 1644107602.005218,
+                "auxillary_file_paths": [
+                    "results/Futbolito_unPalo/Futbolito/Futbolito-3570992.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3570992,
+            "file_path": "results/Futbolito_unPalo/Futbolito.onnx",
+            "reward": null,
+            "creation_time": 1644107602.005218,
+            "auxillary_file_paths": [
+                "results/Futbolito_unPalo/Futbolito/Futbolito-3570992.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.8.1"
+    }
+}
